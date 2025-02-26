@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - Krishna M. Kashikar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .experience-section {
+            padding: 8rem 5% 4rem;
+        }
+        
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+        
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            background: var(--secondary-color);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1px;
+        }
+        
+        .timeline-item {
+            padding: 1rem 2rem;
+            position: relative;
+            width: 50%;
+            animation: slideIn 0.8s ease-out;
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: var(--secondary-color);
+            border: 4px solid var(--white);
+            border-radius: 50%;
+            top: 50%;
+            right: -10px;
+            transform: translateY(-50%);
+        }
+        
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+        
+        .timeline-item:nth-child(even)::after {
+            left: -10px;
+        }
+        
+        .timeline-content {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .timeline-content h3 {
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .timeline-content .date {
+            color: var(--accent-color);
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .activities {
+            margin-top: 4rem;
+        }
+        
+        .activity-card {
+            background: var(--light-bg);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+            transition: transform 0.3s;
+        }
+        
+        .activity-card:hover {
+            transform: translateX(10px);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">KMK</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="education.html">Education</a>
+            <a href="projects.html">Projects</a>
+            <a href="experience.html" class="active">Experience</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <section class="experience-section">
+        <h2>Professional Experience</h2>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <p class="date">Summer 2024</p>
+                    <h3>Web Development Intern</h3>
+                    <p>www.ohioptech.com</p>
+                    <p>Project: Website development for www.bgenggroup.com</p>
+                    <ul>
+                        <li>Developed responsive web pages for BG Engineering group, a bridge design company in Ohio, USA</li>
+                        <li>Implemented Home and Bio pages using HTML and CSS</li>
+                        <li>Created interactive Contact Us page using JavaScript</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="activities">
+            <h2>Activities & Workshops</h2>
+            
+            <div class="activity-card">
+                <h3>Web-A-Thon Workshop</h3>
+                <p class="date">7th & 8th April 2023</p>
+                <p>PURSUIT</p>
+            </div>
+
+            <div class="activity-card">
+                <h3>Machine Learning Application Development with Python</h3>
+                <p class="date">21st & 23rd Nov 2022</p>
+            </div>
+
+            <div class="activity-card">
+                <h3>Event Coordinator</h3>
+                <p class="date">2023</p>
+                <p>CSESA - PURSUIT</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Krishna M. Kashikar. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
