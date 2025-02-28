@@ -1,7 +1,7 @@
 [build]
   base = "/"
-  publish = "/"
-  command = "#"
+  publish = "./"
+  command = ""
 
 [build.environment]
   NODE_VERSION = "16"
@@ -10,10 +10,11 @@
   from = "/*"
   to = "/index.html"
   status = 200
+  force = true
 
 [[headers]]
   for = "/*"
     [headers.values]
-    Access-Control-Allow-Origin = "*"
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
+    Content-Security-Policy = "default-src 'self' 'unsafe-inline' 'unsafe-eval' https:; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https:;"

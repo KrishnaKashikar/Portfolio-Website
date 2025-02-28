@@ -1,5 +1,7 @@
 # Krishna M. Kashikar - Portfolio Website
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/91a240ec-8113-46fd-bc6a-5a8739f991a4/deploy-status)](https://app.netlify.com/sites/krishnakashikar/deploys)
+
 ## 🌟 Overview
 
 
