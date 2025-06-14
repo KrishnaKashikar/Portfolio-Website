@@ -1,6 +1,6 @@
 [build]
   base = "/"
-  publish = "./"
+  publish = "kmk_web"
   command = ""
 
 [build.environment]
